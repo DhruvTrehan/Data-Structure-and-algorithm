@@ -1,0 +1,58 @@
+#include<iostream>
+using namespace std; 
+class node 
+{
+	public:
+		int data;          // data = entered value 
+		node* next;        // next = pointer 
+		// CONSTRUCTOR 	IS CREATED 
+	node (int d)
+	{
+		data = d;            // The input data 
+		next = NULL;         // The adress value 
+	}
+}; 
+void reverse(node *&head)
+{
+	node *C = head ;  //Current Pointer 
+	node *P = NULL ; //Previous Pointer 
+	node *N; 
+	while(C!=NULL)
+	{
+		//Save the next node 
+		N = C -> next ; 
+		// Make the current node point to prev
+		C -> next = P ; 
+		//just update prev and current 
+		P = C; 
+		C = N;
+	}
+	head = P; 
+	return;
+}
+//Reversing the Linked List using recursion 
+node *reverseRec(node *head)
+{
+	//Base Case
+	if(head -> next == NULL || head == NULL)
+	{
+		return head; 
+	}
+	//Rec case 
+	node *smallhead = reverseRec(head->next);
+	node *C = head; 
+	C->next->next = C; 
+	C->next = NULL; 
+	return smallhead; 	
+}
+void print(node *&head)
+{
+	node *temp = head; 
+	while(temp!=NULL)
+	{
+		cout<<temp->data<<"->";
+		temp = temp -> next;
+	}
+	cout<<endl;
+}
+
