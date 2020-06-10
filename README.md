@@ -23,3 +23,47 @@ Tendency of a processor to access same set of memory location repetitively over 
 
 The list items could be easily removed or re-inserted without any reallocation or reorganization of an entire structure because data items could not be restored contiguously. 
 In the disk, while restructuring in an array is a long process. Linked List are dynamic, so the length of the list can be increased or decreased depending upon situation. However, the length of the array remains same as that at the time of deceleration and cannot be changed. 
+
+<h2> Insertion in the Linked List </h2>
+
+Insertion in the Linked List, is a proccess of adding elements in the Linked List. Insertion in the Linked List is of three types:
+
+1. Insert at Head 
+
+2. Insert at Tail 
+
+3. Insert in Middle 
+
+<h2> Deletion in the Linked List </h2>
+
+Deletion in the Linked List, is a process of removing the elements from the Linked List. Deletion is of three types:
+
+1. Deletion at the Head 
+
+2. Deletion at the Tail 
+
+3. Deletion in the Middle 
+
+<h2> Searching in the Linked List </h2>
+
+Searching , is a process of Searching elements in the Linked List. Search could be done by:
+ 
+ 1. Iteration 
+ 
+ 2. Recursion 
+ 
+ <h2> Reversing the Linked List </h2> 
+ 
+ Reversing, is a process of changing the order of elements in the linked list. Reversing is done by:
+ 
+ 1. Iteration 
+ 
+ 2. Recursion 
+ 
+ <h2> Operator Overloading in the Linked List </h2>
+ 
+ Operator overloading, is a process of overloading in order to perform specific operation in the list. 
+ 
+ <h2> Printing the Linked List </h2> 
+ 
+ A special customized loop is setup, to print up the elements in the linked list and print the value in it till NULL is reached. 
