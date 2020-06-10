@@ -55,4 +55,13 @@ void print(node *&head)
 	}
 	cout<<endl;
 }
+int main()
+{
+	// Way to call the first function 
+	reverse(head);
+	print(head);
+	//Way to call the second function 
+	head = reverseRec(head);
+	print(head);
+}
 
