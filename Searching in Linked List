@@ -1,0 +1,72 @@
+#include<iostream>
+using namespace std; 
+class node 
+{
+	public:
+		int data;          // data = entered value 
+		node* next;        // next = pointer 
+		// CONSTRUCTOR 	IS CREATED 
+	node (int d)
+	{
+		data = d;            // The input data 
+		next = NULL;         // The adress value 
+	}
+}; 
+
+//Searching using Recursion 
+bool searchin(node *&head, int key)
+{
+      if(head == NULL)
+      {
+          return;
+      }
+      if (head -> data == key)
+      {
+          return true;
+      }
+      else 
+      {
+          return searchin(head->next,key);
+      }
+}
+
+//Seaching using iteration 
+
+bool searchIterative(node *&head , int key)
+{
+	while(head !=NULL)
+	{
+		if(head->data == key)
+		{
+			return true;
+		}
+		head = head -> next;
+	}
+	return false; 
+}
+
+int main()
+{
+      node *head = NULL; 
+      if (searchin(head,4))
+	    {
+	      	cout<<"Element found"<<endl;
+	    }
+	    else 
+	    {
+		      cout<<"Element not found"<<endl;
+	    }
+	//Syntax to search element using iteration  
+	    if (searchIterative(head,14))
+	    {
+		    cout<<"Element found"<<endl;
+	    }
+	    else 
+	    {
+		    cout<<"element not found"<<endl;
+	    }
+	return 0;
+}
+
+    
+     
