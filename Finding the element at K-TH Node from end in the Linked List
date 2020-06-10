@@ -1,0 +1,61 @@
+#include<iostream>
+using namespace std; 
+class node
+{
+	public:
+		int data;
+		node* next;
+	node(int d)
+	{
+		data = d; 
+		next = NULL;
+	}
+};
+void insertAtTail(node *&head, int data)
+{
+	if(head == NULL)
+	{
+		head = new node(data);
+		return; 
+	}
+	node *temp = head; 
+
+    while(temp->next != NULL)
+	{
+		temp = temp -> next;
+	}
+	node *n = new node(data);
+	temp -> next = n ;
+	return;
+	
+}
+void build(node *&head)
+{
+	int data;
+	cin>>data;
+	while(data != -1)
+	{
+		insertAtTail(head, data);
+		cin>>data;
+	}
+}
+node* runner_mid(node *head)
+{
+	node *slow = head;
+	node *fast = head->next;
+	while(fast != NULL && fast->next != NULL)
+	{
+		fast = fast ->next -> next;
+		slow = slow -> next;
+	}
+	return slow;
+}
+
+int main()
+{
+	node *head = NULL; 
+	build(head);
+	node* m = runner_mid(head);
+    cout<<m->data;
+	return 0;
+}
