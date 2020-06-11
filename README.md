@@ -67,3 +67,17 @@ Searching , is a process of Searching elements in the Linked List. Search could 
  <h2> Printing the Linked List </h2> 
  
  A special customized loop is setup, to print up the elements in the linked list and print the value in it till NULL is reached. 
+ 
+ <h2> Why Merge Sort is preffered for Linked List </h2>
+ 
+ The reason behind this is:
+ 
+ 1. The complexity of the Merge sort remain as that of O(nlogn) despite the fact that, we find the mid-point in the Linked List 
+ 
+ 2. In Linked List, we can insert a node in between in O(1) time and space complexity ; if we are given reference to the previous node 
+ 
+ 3. We do not have random access to elements in the Linked List 
+ 
+ 4. Linked List follows sequential pattern, while reffering to any node. So, that could be a overhead for quick sort. Merge sort access the data sequentially. 
+ 
+ 
