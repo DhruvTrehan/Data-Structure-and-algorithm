@@ -47,7 +47,7 @@ void print(node*&head)
 	}
 	cout<<endl;
 }
-//Using operator overloading 
+//Using operator overloading to input and output in Linked List 
 istream& operator>>(istream &is, node*&head)
 {
 	build(head);
@@ -123,5 +123,5 @@ int main()
 	cin>>head;
 	cout<<head; 
 	head = mergesort(head);
-	cout<<head; 
+	cout<<head; // Printing using operator overloading 
 }
