@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std; 
+// Create a class node for the circular linked list 
 class node
 {
 	public:
@@ -7,9 +8,11 @@ class node
 		node*next;
 	node(int data)
 	{
-		this->data = data;
+		this->data = data; // Refering to data
+		//Here the tail pointer would point to head of the node instead of the NULL 
 	}
 };
+// A function which is used to print the list 
 void printlist(node *head)
 {
 	node *temp = head;
@@ -21,6 +24,7 @@ void printlist(node *head)
 	cout<<temp->data<<endl;
 	cout<<"ENDL";	
 }
+//A function used to push the node in the linked list 
 void push(node *&head , int data)
 {
 	node *ptr1 = new node(data);
