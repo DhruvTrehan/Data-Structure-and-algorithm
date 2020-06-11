@@ -80,4 +80,15 @@ Searching , is a process of Searching elements in the Linked List. Search could 
  
  4. Linked List follows sequential pattern, while reffering to any node. So, that could be a overhead for quick sort. Merge sort access the data sequentially. 
  
+ <h2> Circular Linked List </h2>
+ 
+ When the tail node points to the head node instead of pointing to the NULL Pointer; then that linked list is called as Circular Linked List. 
+ 
+ Some of the Applications of the Circular Linked List are:
+ 
+ 1. In many C.P.U Algorithm, you need Circular Linked List to perform a given operation multiple times 
+ 
+ 2. In the implementation of forming different types of Queue 
+ 
+ 3. In the implementation of the advanced algorithm such as Fibonacci Heap 
  
