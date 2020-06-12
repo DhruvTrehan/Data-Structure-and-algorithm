@@ -127,3 +127,7 @@ This function is used to remove the element in the given list
 <h3> remove(element) </h3>
 
 This function removes the given element from the list 
+
+<h3> front() </h3>
+
+This function is used to print the first element in the list 
