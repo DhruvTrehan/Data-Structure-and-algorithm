@@ -92,3 +92,38 @@ Searching , is a process of Searching elements in the Linked List. Search could 
  
  3. In the implementation of the advanced algorithm such as Fibonacci Heap 
  
+<h2> List STL Functions </h2>
+
+List is included in the given C++ Program. The function is there to add all its utility and is managed 
+
+<h3> Push_Back() </h3>
+
+This function is used to add the elements at the end of the list 
+
+<h3> Sort() </h3>
+
+This function is used to sort the given list 
+
+<h3> push_front() </h3>
+
+This function is used to add the element at the front of the list 
+
+<h3> pop_back() </h3>
+
+As, the name goes; This function removes the last element from the list 
+
+<h3> pop_front() </h3>
+
+This function removes the first element from the list 
+
+<h3> insert(position,element) </h3>
+
+This function is used to insert the element in the linked list 
+
+<h3> erase(position) </h3>
+
+This function is used to remove the element in the given list 
+
+<h3> remove(element) </h3>
+
+This function removes the given element from the list 
