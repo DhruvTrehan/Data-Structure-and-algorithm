@@ -45,7 +45,7 @@ void insertatTail(node* &head, int data)
 		tail = tail->next;
 	}
 	node* n = new node(data);
-    tail->next = n;
+        tail->next = n;
 	return;
 	
 }
