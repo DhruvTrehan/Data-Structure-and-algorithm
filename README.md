@@ -147,3 +147,4 @@ Stacks have several applications in the Computer Programming. LIFO is used to re
 
 A stack could be generalized using templated class <b> template <Typename T> </b> . You can generalize the given code in a following way as told in file <b>generalization of stack </b>
 	
+<h1> Queue </h1>
