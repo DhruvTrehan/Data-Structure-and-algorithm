@@ -134,7 +134,7 @@ This function is used to print the first element in the list
 
 <h1> Stack </h1>
 
-Stack is a data structure, which represents the collection of the objects. A item could be added and stored in a stack using push operation. A object can be retrieved using pop operation, to remove an item from the stack. A item could be inserted at the top of the stack. A item could be either removed either from top or bottom of the stack. Their are two types of stack:
+Stack is a data structure, which represents the collection of the objects. A item could be added and stored in a stack using push operation. An object can be retrieved using pop operation, to remove an item from the stack. A item could be inserted at the top of the stack. A item could be either removed either from top or bottom of the stack. Their are two types of stack:
 
 1. LIFO(Last In First Out)
 2. FIFO(First In First Out)
