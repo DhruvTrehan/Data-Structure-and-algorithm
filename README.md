@@ -139,6 +139,16 @@ Stack is a data structure, which represents the collection of the objects. A ite
 1. LIFO(Last In First Out)
 2. FIFO(First In First Out)
 
+Stack could be explained with the help of real life examples:
+
+1. Stack of books 
+2. ATM Machine 
+3. Pile of Plates 
+
+<b> Vectors are resizable arrays </b> 
+
+In a stack, we can follow operations such as push(), pop(), remove(), empty(). 
+
 FIFO stack is basically a type of Queue. 
 
 Stacks have several applications in the Computer Programming. LIFO is used to retrieve, recently used objects from cache. FIFO stacks is used to ensure the data is retrieved in the order it was entered. Stacks are basically created at the background, while application was running in front. If stack, runs out of memory such situation is termed as <b> Stack Overflow </b>.
