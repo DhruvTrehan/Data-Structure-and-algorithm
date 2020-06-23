@@ -159,10 +159,32 @@ A stack could be generalized using templated class <b> template <Typename T> </b
 	
 <h1> QUEUES </h1>
  Queue is a data structure designed to operate in FIFO (First in First out) context. In queue elements are inserted from rear end and get removed from front end operations called <b>'enqueued'</b> and <b>'dequed'</b> respectively. Queue class is container adapter. Container is an objects that hold data of same type. Queue can be created from different sequence containers.
- <h4> There are two ways to implement Queues</h4>
  
+ <h4> There are two ways to implement Queues</h4>
  
    1. Circular Array based 
    2. Linked List based 
    
    <b>Out of the two Circular Array based implementation is quite lengthier than the Linked List based implementation.</b>
+   
+   <b>Note:</b> In a circular array (n-1) position is adjacent to the first element of the circular array. 
+   
+   <b>Applications:</b> Queue is used for maintaining the whatsapp status messages, placing the delivery order on e-commerce sites like flipkart, amazon or myntra. 
+   
+   <h4> STL Operations in Queue </h4> 
+   
+   1. q.push() : Adds element in the list 
+   2. q.front() : Returns the first element 
+   3. q.pop() : Removes the element 
+   4. q.empty() : Check wheather the queue is empty or not 
+   
+   <h4> Deque </h4>
+   
+   1. In Deque, insertion and deletion could be done from both the ends.
+   2. Deque are the sequence containers with dynamic size, that can be expanded or contracted at both the ends 
+   3. Some functionalities are much more in deque. As, we can extend the vector only in one direction 
+   4. Deque can extend in both the direction like linked list 
+   5. Deque does not contain an internal storage. Deque are more complex than vector internally
+   6. In certain operations where insertion or deletion is done at a positon other than begining or end. In such situation, Deque perform the worst. 
+   
+   
