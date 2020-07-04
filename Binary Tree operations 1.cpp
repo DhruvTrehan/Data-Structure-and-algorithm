@@ -18,7 +18,8 @@ class node{
 node* buildTree(){
     int d;
     cin>>d;
-
+    
+    // '-1' act as a break command while input of the value 
     if(d==-1){
         return NULL;
     }
