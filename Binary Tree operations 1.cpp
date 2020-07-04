@@ -28,6 +28,9 @@ node* buildTree(){
     root->right = buildTree();
     return root;
 }
+
+// Printing is done using Post order Traversal 
+
 void print(node *root){
     if(root==NULL){
         return;
@@ -37,6 +40,8 @@ void print(node *root){
     print(root->left);
     print(root->right);
 }
+
+// Printing is done using IN-Order Traversal 
 
 void printIn(node*root){
     if(root==NULL){
@@ -48,6 +53,8 @@ void printIn(node*root){
     printIn(root->right);
 }
 
+// Printing is done using Post-Order Traversal 
+
 void printPost(node*root){
     if(root==NULL){
         return;
@@ -57,6 +64,7 @@ void printPost(node*root){
     cout<<root->data<<" ";
 }
 
+// Performing Level Order Reversal ( A recursive approach )
 int height(node*root){
     if(root==NULL){
         return 0;
