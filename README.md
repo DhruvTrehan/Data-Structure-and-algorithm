@@ -199,3 +199,10 @@ Binary Trees are build using recursion. It is a top-down appraoch.
 <b> More info about Binary Tree </b>
 
    Binary Operation such as Insertion, Deletion, Search, Ordering decide which Data Structure is helpful for a particular problem. As the name goes, in Binary Trees atleast one    node should be connected to atleast 2 nodes. The nodes in the Binary Trees is connected using the adress. The basic node is called as the root node. And , the subsequents of    root node are called as children node. Moreover, the nodes which do not have any children are called as Leaf Nodes. 
+   
+   The different types of Traversal in a Binary Tree are:
+   
+   1. In-Order Traversal ( ROOT - > LEFT - > RIGHT )
+   2. Pre-Order Traversal ( LEFT - > ROOT - > RIGHT )
+   3. Post-Order Traversal ( LEFT - > RIGHT - > ROOT )
+   4. Level-Order Traversal ( Recursive Approach )
