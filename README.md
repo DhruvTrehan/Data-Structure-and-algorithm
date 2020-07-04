@@ -187,4 +187,15 @@ A stack could be generalized using templated class <b> template <Typename T> </b
    5. Deque does not contain an internal storage. Deque are more complex than vector internally
    6. In certain operations where insertion or deletion is done at a positon other than begining or end. In such situation, Deque perform the worst. 
    
+   <h4> Binary Trees </h4>
    
+Binary Trees are build using recursion. It is a top-down appraoch. 
+
+<b> Algorithm </b>
+
+   1. Build a root 
+   2. Recursively build left and right subtree 
+   
+<b> More info about Binary Tree </b>
+
+   Binary Operation such as Insertion, Deletion, Search, Ordering decide which Data Structure is helpful for a particular problem. As the name goes, in Binary Trees atleast one    node should be connected to atleast 2 nodes. The nodes in the Binary Trees is connected using the adress. The basic node is called as the root node. And , the subsequents of    root node are called as children node. Moreover, the nodes which do not have any children are called as Leaf Nodes. 
