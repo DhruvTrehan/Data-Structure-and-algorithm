@@ -207,4 +207,15 @@ Binary Trees are build using recursion. It is a top-down appraoch.
    3. Post-Order Traversal ( LEFT - > RIGHT - > ROOT )
    4. Level-Order Traversal ( Recursive Approach )
    
-   A skew tree is one where each root node has one child node or no node. In case of a Skew Tree, it takes O(n) time to calculate the value or the hieght of the given tree. 
+   A skew tree is one where each root node has one child node or no node. In case of a Skew Tree, it takes O(n) time to calculate the value or the hieght of the given tree.
+   
+   Some common problems in the Binary Tree:
+   
+   1. Counting Number of Nodes in the Binary Tree
+   2. Finding the longest chord in the Binary Tree
+   3. Binary Tree Sum Replacement 
+   4. Height Balanced Binary Tree
+   5. Nodes at Distance K from Given Node 
+   6. Lowest Common Ancestor 
+   7. Maximum Sum Path from Any Node to Node 
+   8. Shortest Distance between the Nodes of the Binary Tree 
