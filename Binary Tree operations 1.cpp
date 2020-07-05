@@ -75,6 +75,7 @@ int height(node*root){
 
 }
 
+// Printing the node at the given level K
 void printKthLevel(node*root,int k){
     if(root==NULL){
         return;
@@ -89,6 +90,7 @@ void printKthLevel(node*root,int k){
 
 }
 
+//Printing all the nodes below that level 
 void printAllLevels(node*root){
     int H = height(root);
 
@@ -99,12 +101,15 @@ void printAllLevels(node*root){
     return;
 }
 
+// Counting number of nodes in the given Binary Tree
 int count(node*root){
     if(root==NULL){
         return 0;
     }
     return 1 + count(root->left) + count(root->right);
 }
+
+// Performing Breath First Search
 
 void bfs(node *root){
     queue<node*> q;
@@ -135,11 +140,12 @@ void bfs(node *root){
     return;
 }
 
-
+// Driver or Main Methd
 int main(){ 
     node* root = buildTree();
-    //cout<<count(root)<<endl;
-    //printAllLevels(root);
+    height(root);
+    cout<<count(root)<<endl;
+    printAllLevels(root);
     bfs(root);
 
 return 0;
