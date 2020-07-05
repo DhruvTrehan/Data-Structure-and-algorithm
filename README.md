@@ -187,7 +187,7 @@ A stack could be generalized using templated class <b> template <Typename T> </b
    5. Deque does not contain an internal storage. Deque are more complex than vector internally
    6. In certain operations where insertion or deletion is done at a positon other than begining or end. In such situation, Deque perform the worst. 
    
-   <h4> Binary Trees </h4>
+   <h1> Binary Trees </h1>
    
 Binary Trees are build using recursion. It is a top-down appraoch. 
 
@@ -206,3 +206,5 @@ Binary Trees are build using recursion. It is a top-down appraoch.
    2. Pre-Order Traversal ( LEFT - > ROOT - > RIGHT )
    3. Post-Order Traversal ( LEFT - > RIGHT - > ROOT )
    4. Level-Order Traversal ( Recursive Approach )
+   
+   A skew tree is one where each root node has one child node or no node. In case of a Skew Tree, it takes O(n) time to calculate the value or the hieght of the given tree. 
