@@ -37,24 +37,6 @@ void print(node *root){
     print(root->right);
 }
 
-void printIn(node*root){
-    if(root==NULL){
-        return;
-    }
-    //Otherwise Left Root Right
-    printIn(root->left);
-    cout<<root->data<<" ";
-    printIn(root->right);
-}
-
-void printPost(node*root){
-    if(root==NULL){
-        return;
-    }
-    printPost(root->left);
-    printPost(root->right);
-    cout<<root->data<<" ";
-}
 
 int height(node*root){
     if(root==NULL){
@@ -64,76 +46,6 @@ int height(node*root){
     int rs = height(root->right);
     return max(ls,rs) + 1;
 
-}
-
-void printKthLevel(node*root,int k){
-    if(root==NULL){
-        return;
-    }
-    if(k==1){
-        cout<<root->data<<" ";
-        return;
-    }
-    printKthLevel(root->left,k-1);
-    printKthLevel(root->right,k-1);
-    return;
-
-}
-
-void printAllLevels(node*root){
-    int H = height(root);
-
-    for(int i=1;i<=H;i++){
-        printKthLevel(root,i);
-        cout<<endl;
-    }
-    return;
-}
-
-int count(node*root){
-    if(root==NULL){
-        return 0;
-    }
-    return 1 + count(root->left) + count(root->right);
-}
-
-void bfs(node *root){
-    queue<node*> q;
-    q.push(root);
-    q.push(NULL);
-
-    while(!q.empty()){
-        node* f = q.front();
-        if(f==NULL){
-            cout<<endl;
-            q.pop();
-            if(!q.empty()){
-                q.push(NULL);
-            }
-        }
-        else{
-            cout<<f->data<<",";
-            q.pop();
-
-            if(f->left){
-                q.push(f->left);
-            }
-            if(f->right){
-                q.push(f->right);
-            }
-        }
-    }
-    return;
-}
-
-void mirror(node*root){
-    if(root==NULL){
-        return;
-    }
-    swap(root->left,root->right);
-    mirror(root->left);
-    mirror(root->right);
-    return;
 }
 
 class Pair{
