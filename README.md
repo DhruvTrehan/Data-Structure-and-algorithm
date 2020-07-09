@@ -234,3 +234,5 @@ Binary Trees are build using recursion. It is a top-down appraoch.
    6. Lowest Common Ancestor 
    7. Maximum Sum Path from Any Node to Node 
    8. Shortest Distance between the Nodes of the Binary Tree 
+   
+   Priority Queue STL is used to work efficiently when we need to code to find the output based on some term and condition. For eg, When you go to bank and they say that they 	    would do the work first for the persons who are more than 70 years of age and there are 1000 people standing in queue. So, that is a way they could easily priortize and add      the people. 
