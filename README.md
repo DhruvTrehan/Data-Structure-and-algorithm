@@ -237,9 +237,32 @@ Binary Trees are build using recursion. It is a top-down appraoch.
    
    Priority Queue STL is used to work efficiently when we need to code to find the output based on some term and condition. For eg, When you go to bank and they say that they 	    would do the work first for the persons who are more than 70 years of age and there are 1000 people standing in queue. So, that is a way they could easily priortize and add      the people. 
    
-   <b> What is the purpose of Hash Data Structure <\b>
+<h1> What is the purpose of Hash Data Structure </h1>
 	
-	Hash Map is their to do support insertion, deletion, and search in average case-constant time O(1) time complexity. This data is not useful if you want to do some kind 	of an order of an element.
+Hash Map is their to do support insertion, deletion, and search in average case-constant time O(1) time complexity. This data is not useful if you want to do some kind 	of an order of an element.
 	
-	Hash ["string key"] ==> Integer Value 
+Hash ["string key"] ==> Integer Value 
+
+Array is the simplest kind of hashing because, in an array we maintain index and a value. Hash Table is an array of a fixed size. 
+
+<b> Operations in Hash Table </b>
+
+Insert - T[h(key)] = value
+Delete - T[h(key)] = NULL
+Search - return T[h(key)]
+
+If h("John") = h("Joe") then collision cannot be avoided. Collision cannot be avoided only its chances can be reduced by using a good hash function. 
+
+A "good hash function" has following properties:
+
+1. Reduce a chance of collision - Distribute Key Uniformly over the Table
+2. Should be fast to compute
+
+<b> How Hash Table is build </b>
+
+h(key) = key % tablesize
+
+
+
+
 
