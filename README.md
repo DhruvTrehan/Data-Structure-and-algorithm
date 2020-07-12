@@ -237,4 +237,9 @@ Binary Trees are build using recursion. It is a top-down appraoch.
    
    Priority Queue STL is used to work efficiently when we need to code to find the output based on some term and condition. For eg, When you go to bank and they say that they 	    would do the work first for the persons who are more than 70 years of age and there are 1000 people standing in queue. So, that is a way they could easily priortize and add      the people. 
    
-   Hash Map is their to do support insertion, deletion, and search in average case-constant time O(1) time complexity. This data is not useful if you want to do some kind of an    order of an element. 
+   <b> What is the purpose of Hash Data Structure <\b>
+	
+	Hash Map is their to do support insertion, deletion, and search in average case-constant time O(1) time complexity. This data is not useful if you want to do some kind 	of an order of an element.
+	
+	Hash ["string key"] ==> Integer Value 
+
