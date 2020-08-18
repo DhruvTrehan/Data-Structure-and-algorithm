@@ -22,7 +22,14 @@ Tendency of a processor to access same set of memory location repetitively over 
 <h2>Benefit of a Linked List over an array.</h2> 
 
 The list items could be easily removed or re-inserted without any reallocation or reorganization of an entire structure because data items could not be restored contiguously. 
-In the disk, while restructuring in an array is a long process. Linked List are dynamic, so the length of the list can be increased or decreased depending upon situation. However, the length of the array remains same as that at the time of deceleration and cannot be changed. 
+In the disk, while restructuring in an array is a long process. Linked List are dynamic, so the length of the list can be increased or decreased depending upon situation. However, the length of the array remains same as that at the time of deceleration and cannot be changed. It is costly to insert and delete elements in an array. 
+
+In Linked List Memory allocation is done during the run time. There by, Linked List uses dynamic memory allocation. 
+
+<h2> Applications of Linked List </h2>
+
+1. Process queue in operating system, actually doubly linked list of process in ready state. There by, it process at the front of linked list denotes the one to be operated next
+2. Where insertion and deletion is greater than retrievels 
 
 <h2> Insertion in the Linked List </h2>
 
