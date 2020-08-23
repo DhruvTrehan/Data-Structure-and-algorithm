@@ -4,7 +4,8 @@ using namespace std;
 void spancalc(int arr[] , int n)
 {
     stack <int> s;
-    int ans[n];
+    s.push(0);
+    int ans[n] = 1;
     for(int i = 0 ; i < n ; i++)
     {
         while(!s.empty() && arr[s.top()] <= arr[i])
