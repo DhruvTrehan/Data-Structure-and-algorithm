@@ -1,30 +1,34 @@
 #include<iostream>
 #include<stack>
 using namespace std;
-void printSpan(int arr[] , int n)
+void spancalc(int arr[] , int n)
 {
-	stack <int> s;
-	int ans[100] = {};
-	for(int day = 0 ; day < n; ++day)
-	{
-		int curPrice = arr[day];
-		while(s.empty() == false && arr[s.top()] < curPrice)
-		{
-			s.pop();
-		}
-		int betterdays = s.empty() ? 0: s.top();
-		int span = day - betterdays;
-		ans[day] = span;
-		s.push(day);
-	}
-	for(int i = 0 ; i < n ; i++)
-	{
-		cout<<ans[i]<<" ";
-	}
+    stack <int> s;
+    s.push(0);
+    int ans[n] = 1;
+    for(int i = 0 ; i < n ; i++)
+    {
+        while(!s.empty() && arr[s.top()] <= arr[i])
+        {
+            s.pop();
+        }
+        ans[i] = (s.empty()) ? (i+1) : (i-s.top());
+        s.push(i);
+    }
+    for(int i = 0 ; i < n ; i++)
+    {
+        cout<<ans[i]<<" ";
+    }
+    cout<<"END";
 }
-int main()
+int main() 
 {
-	int n = 7;
-	int arr[100] = {100 , 80 , 60 , 70 , 60 , 75 , 85};
-	printSpan(arr,n);
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i = 0 ; i < n ; i++)
+    {
+        cin>>arr[i];
+    }
+    spancalc(arr,n);
 }

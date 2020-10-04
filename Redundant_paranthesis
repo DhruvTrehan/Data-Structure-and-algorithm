@@ -1,0 +1,33 @@
+#include<iostream>
+#include<stack>
+#include<cstring>
+using namespace std;
+int main()
+{
+    int tc;
+    cin>>tc;
+    while(tc>0){
+        int flag=1;
+        string s;
+        cin>>s;
+        stack <int> pile;
+        
+        for(int i=0;i<s.length();i++){
+            
+            if(s[i]==')'){
+                if(pile.top()=='(')
+                flag=0;
+                //cout<<cnt<<" ";
+                while(!pile.empty() && pile.top()!='(')
+					pile.pop();
+				if(!pile.empty()) pile.pop();	
+            }
+            else pile.push(s[i]);
+        }
+        if(!flag)
+			cout<<"Duplicate"<<endl;
+		else 
+			cout<<"Not Duplicates"<<endl;
+        tc--;
+    }
+}

@@ -22,7 +22,14 @@ Tendency of a processor to access same set of memory location repetitively over 
 <h2>Benefit of a Linked List over an array.</h2> 
 
 The list items could be easily removed or re-inserted without any reallocation or reorganization of an entire structure because data items could not be restored contiguously. 
-In the disk, while restructuring in an array is a long process. Linked List are dynamic, so the length of the list can be increased or decreased depending upon situation. However, the length of the array remains same as that at the time of deceleration and cannot be changed. 
+In the disk, while restructuring in an array is a long process. Linked List are dynamic, so the length of the list can be increased or decreased depending upon situation. However, the length of the array remains same as that at the time of deceleration and cannot be changed. It is costly to insert and delete elements in an array. 
+
+In Linked List Memory allocation is done during the run time. There by, Linked List uses dynamic memory allocation. 
+
+<h2> Applications of Linked List </h2>
+
+1. Process queue in operating system, actually doubly linked list of process in ready state. There by, it process at the front of linked list denotes the one to be operated next
+2. Where insertion and deletion is greater than retrievels 
 
 <h2> Insertion in the Linked List </h2>
 
@@ -112,11 +119,25 @@ This function is used to remove the element in the given list
 This function removes the given element from the list 
 <h3> front() </h3>
 This function is used to print the first element in the list 
-<h1> STACK </h1>
-Stack is a data structure, which represents the collection of the objects. A item could be added and stored in a stack using push operation. A object can be retrieved using pop operation, to remove an item from the stack. A item could be inserted at the top of the stack. A item could be either removed either from top or bottom of the stack. Their are two types of stack:
+
+
+<h1> Stack </h1>
+
+Stack is a data structure, which represents the collection of the objects. A item could be added and stored in a stack using push operation. An object can be retrieved using pop operation, to remove an item from the stack. A item could be inserted at the top of the stack. A item could be either removed either from top or bottom of the stack. Their are two types of stack:
+
 
 1. LIFO(Last In First Out)
 2. FIFO(First In First Out)
+
+Stack could be explained with the help of real life examples:
+
+1. Stack of books 
+2. ATM Machine 
+3. Pile of Plates 
+
+<b> Vectors are resizable arrays </b> 
+
+In a stack, we can follow operations such as push(), pop(), remove(), empty(). 
 
 FIFO stack is basically a type of Queue. 
 
@@ -124,32 +145,116 @@ Stacks have several applications in the Computer Programming. LIFO is used to re
 <h2> Genralizaition of Stack </h2>
 
 A stack could be generalized using templated class <b> template <Typename T> </b> . You can generalize the given code in a following way as told in file <b>generalization of stack </b>
- 
- <h2>STL Stack Functions </h2>
-<b>stack</b> header file is used in order to implement STL functions. The function is there to add all its utility and is managed 
-<h3> push(data) </h3>
-This function is used to add the elements at the end of the list 
-<h3> top() </h3>
-This function is used to check the top most element. 
-<h3> pop() </h3>
-This function is used to delete the element at the front of the list.
 
-
- <h1> QUEUES </h1>
+	
+<h1> QUEUES </h1>
  Queue is a data structure designed to operate in FIFO (First in First out) context. In queue elements are inserted from rear end and get removed from front end operations called <b>'enqueued'</b> and <b>'dequed'</b> respectively. Queue class is container adapter. Container is an objects that hold data of same type. Queue can be created from different sequence containers.
- <h4> There are two ways to implement Queues</h4>
  
+ <h4> There are two ways to implement Queues</h4>
  
    1. Circular Array based 
    2. Linked List based 
    
    <b>Out of the two Circular Array based implementation is quite lengthier than the Linked List based implementation.</b>
    
-   <h2>STL Queue class function</h2>
-<b>queue</b> header file is used in order to implement STL functions. The function is there to add all its utility and is managed 
-<h3> push(data) </h3>
-This function is used to add the elements at the end of the list 
-<h3> front() </h3>
-This function is used to check the front element. 
-<h3> pop() </h3>
-This function is used to delete the element at the front of the list.
+
+   <b>Note:</b> In a circular array (n-1) position is adjacent to the first element of the circular array. 
+   
+   <b>Applications:</b> Queue is used for maintaining the whatsapp status messages, placing the delivery order on e-commerce sites like flipkart, amazon or myntra. 
+   
+   <h4> STL Operations in Queue </h4> 
+   
+   1. q.push() : Adds element in the list 
+   2. q.front() : Returns the first element 
+   3. q.pop() : Removes the element 
+   4. q.empty() : Check wheather the queue is empty or not 
+   
+   <h4> Deque </h4>
+   
+   1. In Deque, insertion and deletion could be done from both the ends.
+   2. Deque are the sequence containers with dynamic size, that can be expanded or contracted at both the ends 
+   3. Some functionalities are much more in deque. As, we can extend the vector only in one direction 
+   4. Deque can extend in both the direction like linked list 
+   5. Deque does not contain an internal storage. Deque are more complex than vector internally
+   6. In certain operations where insertion or deletion is done at a positon other than begining or end. In such situation, Deque perform the worst. 
+   
+   <h1> Binary Trees </h1>
+   
+Binary Trees are build using recursion. It is a top-down appraoch. 
+
+<b> Algorithm </b>
+
+   1. Build a root 
+   2. Recursively build left and right subtree 
+   
+<b> More info about Binary Tree </b>
+
+   Binary Operation such as Insertion, Deletion, Search, Ordering decide which Data Structure is helpful for a particular problem. As the name goes, in Binary Trees atleast one    node should be connected to atleast 2 nodes. The nodes in the Binary Trees is connected using the adress. The basic node is called as the root node. And , the subsequents of    root node are called as children node. Moreover, the nodes which do not have any children are called as Leaf Nodes. 
+   
+   The different types of Traversal in a Binary Tree are:
+   
+   1. In-Order Traversal ( ROOT - > LEFT - > RIGHT )
+   2. Pre-Order Traversal ( LEFT - > ROOT - > RIGHT )
+   3. Post-Order Traversal ( LEFT - > RIGHT - > ROOT )
+   4. Level-Order Traversal ( Recursive Approach )
+   
+    /desktop   <-- root
+ 
+/            \
+...
+
+                 my computer
+
+              /                \
+  
+      local (c):           local (d):
+
+       /                  /      |       \
+
+   ...                  prg1    prg2       prg3
+   
+   A skew tree is one where each root node has one child node or no node. In case of a Skew Tree, it takes O(n) time to calculate the value or the hieght of the given tree.
+   
+   Some common problems in the Binary Tree:
+   
+   1. Counting Number of Nodes in the Binary Tree
+   2. Finding the longest chord in the Binary Tree
+   3. Binary Tree Sum Replacement 
+   4. Height Balanced Binary Tree
+   5. Nodes at Distance K from Given Node 
+   6. Lowest Common Ancestor 
+   7. Maximum Sum Path from Any Node to Node 
+   8. Shortest Distance between the Nodes of the Binary Tree 
+   
+   Priority Queue STL is used to work efficiently when we need to code to find the output based on some term and condition. For eg, When you go to bank and they say that they 	    would do the work first for the persons who are more than 70 years of age and there are 1000 people standing in queue. So, that is a way they could easily priortize and add      the people. 
+   
+<h1> What is the purpose of Hash Data Structure </h1>
+	
+Hash Map is their to do support insertion, deletion, and search in average case-constant time O(1) time complexity. This data is not useful if you want to do some kind 	of an order of an element.
+	
+Hash ["string key"] ==> Integer Value 
+
+Array is the simplest kind of hashing because, in an array we maintain index and a value. Hash Table is an array of a fixed size. 
+
+<b> Operations in Hash Table </b>
+
+Insert - T[h(key)] = value
+Delete - T[h(key)] = NULL
+Search - return T[h(key)]
+
+If h("John") = h("Joe") then collision cannot be avoided. Collision cannot be avoided only its chances can be reduced by using a good hash function. 
+
+A "good hash function" has following properties:
+
+1. Reduce a chance of collision - Distribute Key Uniformly over the Table
+2. Should be fast to compute
+
+<b> How Hash Table is build </b>
+
+h(key) = key % tablesize
+
+
+
+
+
+

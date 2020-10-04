@@ -1,39 +1,51 @@
-//Balanced Paranthesis: A code is written down to find number of balanced parathesis in the code
-/* Input: (())
-Output: 1 */
-
-
 #include<iostream>
 #include<stack>
-using namespace std; 
-bool checkexpr(string str)
+#include<string>
+using namespace std;
+// Function to check whether two characters are opening 
+// and closing of same type. 
+
+
+
+bool ArePair(char opening,char closing)
 {
-	stack <char> s;
-	for(int i = 0 ; i < str.size() ; i++)
+	if(opening == '(' && closing == ')') return true;
+	else if(opening == '{' && closing == '}') return true;
+	else if(opening == '[' && closing == ']') return true;
+	return false;
+}
+bool Balanced(string exp)
+{
+	stack<char>  S;
+	for(int i =0;i<exp.length();i++)
 	{
-		char curchar = str[i];
-		if(curchar == '(')
+		if(exp[i] == '(' || exp[i] == '{' || exp[i] == '[')
+			S.push(exp[i]);
+		else if(exp[i] == ')' || exp[i] == '}' || exp[i] == ']')
 		{
-			s.push(curchar);
-		}
-		else if(curchar == ')')
-		{
-			if(s.empty() || s.top() !='(')
-			{
+			
+		if(S.empty() || !ArePair(S.top(),exp[i]))
 				return false;
-			}
-			s.pop();
+			else
+				S.pop();
 		}
 	}
-	return s.empty();
-	
+	if(S.empty()){
+		return true;
+	}
+	else{
+		return false;
+	}
 }
+
 int main()
 {
-	string expr;
-	cin>>expr;
-	
-	bool isvalid = checkexpr(expr);
-	cout<< isvalid;
-	return 0;
+	/*Code to test the function AreParanthesesBalanced*/
+	string expression;
+	 // input expression from STDIN/Console
+	cin>>expression;
+	if(Balanced(expression))
+		cout<<"Yes\n";
+	else
+		cout<<"No\n";
 }
