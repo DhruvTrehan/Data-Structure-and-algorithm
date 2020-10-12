@@ -100,48 +100,31 @@ Searching , is a process of Searching elements in the Linked List. Search could 
  3. In the implementation of the advanced algorithm such as Fibonacci Heap 
  
 <h2> List STL Functions </h2>
-
 List is included in the given C++ Program. The function is there to add all its utility and is managed 
-
 <h3> Push_Back() </h3>
-
 This function is used to add the elements at the end of the list 
-
 <h3> Sort() </h3>
-
 This function is used to sort the given list 
-
 <h3> push_front() </h3>
-
 This function is used to add the element at the front of the list 
-
 <h3> pop_back() </h3>
-
 As, the name goes; This function removes the last element from the list 
-
 <h3> pop_front() </h3>
-
 This function removes the first element from the list 
-
 <h3> insert(position,element) </h3>
-
 This function is used to insert the element in the linked list 
-
 <h3> erase(position) </h3>
-
 This function is used to remove the element in the given list 
-
 <h3> remove(element) </h3>
-
 This function removes the given element from the list 
-
 <h3> front() </h3>
-
 This function is used to print the first element in the list 
+
 
 <h1> Stack </h1>
 
 Stack is a data structure, which represents the collection of the objects. A item could be added and stored in a stack using push operation. An object can be retrieved using pop operation, to remove an item from the stack. A item could be inserted at the top of the stack. A item could be either removed either from top or bottom of the stack. Their are two types of stack:
+
 
 1. LIFO(Last In First Out)
 2. FIFO(First In First Out)
@@ -159,10 +142,10 @@ In a stack, we can follow operations such as push(), pop(), remove(), empty().
 FIFO stack is basically a type of Queue. 
 
 Stacks have several applications in the Computer Programming. LIFO is used to retrieve, recently used objects from cache. FIFO stacks is used to ensure the data is retrieved in the order it was entered. Stacks are basically created at the background, while application was running in front. If stack, runs out of memory such situation is termed as <b> Stack Overflow </b>.
-
 <h2> Genralizaition of Stack </h2>
 
 A stack could be generalized using templated class <b> template <Typename T> </b> . You can generalize the given code in a following way as told in file <b>generalization of stack </b>
+
 	
 <h1> QUEUES </h1>
  Queue is a data structure designed to operate in FIFO (First in First out) context. In queue elements are inserted from rear end and get removed from front end operations called <b>'enqueued'</b> and <b>'dequed'</b> respectively. Queue class is container adapter. Container is an objects that hold data of same type. Queue can be created from different sequence containers.
@@ -174,6 +157,7 @@ A stack could be generalized using templated class <b> template <Typename T> </b
    
    <b>Out of the two Circular Array based implementation is quite lengthier than the Linked List based implementation.</b>
    
+
    <b>Note:</b> In a circular array (n-1) position is adjacent to the first element of the circular array. 
    
    <b>Applications:</b> Queue is used for maintaining the whatsapp status messages, placing the delivery order on e-commerce sites like flipkart, amazon or myntra. 
@@ -268,6 +252,7 @@ A "good hash function" has following properties:
 <b> How Hash Table is build </b>
 
 h(key) = key % tablesize
+
 
 
 
