@@ -251,7 +251,7 @@ A "good hash function" has following properties:
 
 <b> How Hash Table is build </b>
 
-h(key) = key % tablesize
+<b> h(key) = key % tablesize </b>
 
 
 
