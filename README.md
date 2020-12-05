@@ -5,7 +5,7 @@ Linked List is a linear collection of the data elements. It is data structure co
 o	Data 
 o	Reference (Address to next node) 
  
-<h2>Features of Linked List</h2>
+<h1> Feature of Linked List </h1>
 
  •	Structure of Linked List allows the efficient insertion or removal of an element at any position
 
